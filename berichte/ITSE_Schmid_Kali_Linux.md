@@ -13,7 +13,7 @@ Datum: 22.09.2025
 
 1.) Kali von [kali.org]() herunterladen (VMware)
 
-![[kali.png]]
+![[https://raw.githubusercontent.com/w17chh47/4AHITS_ITSE_Schmid/refs/heads/main/imgs/kali.png]]
 
 2.) Die `.7z`-Datei mit 7zip extrahieren
 
