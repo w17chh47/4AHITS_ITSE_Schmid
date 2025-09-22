@@ -1,15 +1,12 @@
-Name: Cedric Schmid
-Klasse: 3AHITS
-Fach: ITSE-Übungen
-Lehrkraft: Franz Matejka
-Thema: Kali-Linux aufsetzen
-Datum: 22.09.2025
+| Name          | Klasse | Fach         | Thema                | Datum      | Lehrkraft     |
+| ------------- | ------ | ------------ | -------------------- | ---------- | ------------- |
+| Cedric Schmid | 4AHITS | ITSE-Übungen | Kali-Linux aufsetzen | 22.09.2025 | Franz Matejka |
 
 ## Installation
 
 1.) Kali von [kali.org]() herunterladen (VMware)
 
-![](https://raw.githubusercontent.com/w17chh47/4AHITS_ITSE_Schmid/refs/heads/main/imgs/kali.png)
+![[kali.png]]
 
 2.) Die `.7z`-Datei mit 7zip extrahieren
 
