@@ -1,13 +1,9 @@
----
-
 Name: Cedric Schmid
 Klasse: 3AHITS
 Fach: ITSE-Übungen
 Lehrkraft: Franz Matejka
 Thema: Kali-Linux aufsetzen
 Datum: 22.09.2025
-
----
 
 ## Installation
 
