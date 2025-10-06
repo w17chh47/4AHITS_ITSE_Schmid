@@ -1,6 +1,6 @@
 | Name          | Klasse | Fach         | Thema                | Datum      | Lehrkraft     |
 | ------------- | ------ | ------------ | -------------------- | ---------- | ------------- |
-| Cedric Schmid | 4AHITS | ITSE-Übungen | Git, VSCode, Netscan | 22.09.2025 | Franz Matejka |
+| Cedric Schmid | 4AHITS | ITSE-Übungen | Git, VSCode, Netscan | 06.10.2025 | Franz Matejka |
 
 ## Git-Setup
 
