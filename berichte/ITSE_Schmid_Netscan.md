@@ -8,13 +8,13 @@
 
 #### Allgemein
 
-Der ping-Dienst verwendet den ICMP-Protokoll (Internet Control Message Protocol) auf der Netzwerkebene (Layer 3) des OSI-Modells.
+ping verwendet das ICMP-Protokoll (Internet Control Message Protocol)
 
 Firewalls können mit ping-Requests auf verschiedene Weise umgehen:
 
-- ICMP-Blocking: Einige Firewalls blockieren ICMP-Echo-Requests komplett, um Angriffe zu verhindern.
-- Rate Limiting: Andere Firewalls begrenzen die Anzahl der ICMP-Echo-Requests, die innerhalb eines bestimmten Zeitraums empfangen werden dürfen.
-- ICMP-Filterung: Einige Firewalls filtern ICMP-Echo-Requests basierend auf der Quell-IP-Adresse, der Ziel-IP-Adresse oder anderen Kriterien.
+- ICMP-Blocking
+- Rate Limiting
+- ICMP-Filterung
 
 #### Cheatsheet
 
