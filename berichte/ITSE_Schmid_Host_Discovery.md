@@ -4,30 +4,34 @@
 
 ## Aufgabenstellung
 
-Host discovery
-Cybersecurity 4 Lab
 Durch aktives Versenden von Netzwerkpaketen und Auswerten der Rückantwort (oder ausbleiben derselben) wird ermittelt:
 
-network scanning: welche Rechner sind im Netzwerk und welche Dienste stellen diese zur Verfügung?
-vulnerability scanning: gibt es bekannte Schwachstellen die ausgenutzt werden können?
+1. network scanning: welche Rechner sind im Netzwerk und welche Dienste stellen diese zur Verfügung?
+2. vulnerability scanning: gibt es bekannte Schwachstellen die ausgenutzt werden können?
+
 Findet in der information gathering Phase eines Angriffs statt.
 
-Voraussetzungen
+**Voraussetzungen**
+
 für die folgenden Übungen
 
-VM mit Kali
-VM mit Metasploitable
-VMs im Bridged Mode (Bridge ins Labor-Netzwerk)
-Übung (ping)
+- VM mit Kali
+- VM mit Metasploitable
+- VMs im Bridged Mode (Bridge ins Labor-Netzwerk)
+
+**Übung (ping)**
+
 Als host discovery (host scanning) versteht man den Vorgang um unbekannte Geräte in einem Netzwerk zu finden, bzw. festzustellen ob bekannte Geräte im Netzwerk erreichbar sind.
 
 Das einfachste Werkzeug dafür ist ping.
 
-Verwende Kali und Metasploitable im Bridged Mode (Bridge ins Labor-Netzwerk)
-Experimentiere mit ping im Labor-Netzwerk (Metasploitable, Default Gateway, …)
-Recherchiere zu den Optionen von ping, erstelle ein kleines Cheat Sheet
-Welchen Netzwerkdienst verwendet der ping Dienst? Recherchiere wie Firewalls häufig mit ping umgehen.
-Übung (ping script)
+- Verwende Kali und Metasploitable im Bridged Mode (Bridge ins Labor-Netzwerk)
+- Experimentiere mit ping im Labor-Netzwerk (Metasploitable, Default Gateway, …)
+- Recherchiere zu den Optionen von ping, erstelle ein kleines Cheat Sheet
+- Welchen Netzwerkdienst verwendet der ping Dienst? Recherchiere wie Firewalls häufig mit ping umgehen.
+
+**Übung (ping script)**
+
 Schreibe ein shell Skript das automatisiert (Schleife) alle Hosts im subnet anpingt. Die Ausgabe soll so sein, dass man daraus die aktiven Hosts erkennen kann (für nicht aktive Hosts soll keine Ausgabe sein).
 
 Info (nmap)
@@ -41,17 +45,19 @@ One of Nmap’s most exciting new features is the Nmap Scripting Engine, which e
 
 Wird gerne in Filmen verwendet wenn es um Hacking geht (Nmap In The Movies)
 
-Übung (host discovery)
+**Übung (host discovery)**
+
 nmap ist ein Tool zum network scanning. In einer ersten Phase (host discovery, ping scan oder ping sweep) ermittelt nmap alle aktiven Hosts.
 
 Aufgaben:
 
-Recherchiere zur grundlegenden Anwendung von nmap für einen sogenannten ping scan (host discovery).
-Ermittle alle aktiven Hosts im Subnetz des Labor-Netzwerks mit nmap.
+- Recherchiere zur grundlegenden Anwendung von nmap für einen sogenannten ping scan (host discovery).
+- Ermittle alle aktiven Hosts im Subnetz des Labor-Netzwerks mit nmap.
+
 Hinweise:
 
-nmap benötigt als Argument den IP Adressbereich des Subnet in Präfix Notation (z.B.: 192.168.178.0/24)
-Mit der Option -sn führt nmap nur den ping scan durch (ansonsten wird automtisch auch die nächste, länger dauernde, Phase des scans ausgeführt – siehe folgende Übung)
+- nmap benötigt als Argument den IP Adressbereich des Subnet in Präfix Notation (z.B.: 192.168.178.0/24)
+- Mit der Option -sn führt nmap nur den ping scan durch (ansonsten wird automtisch auch die nächste, länger dauernde, Phase des scans ausgeführt – siehe folgende Übung)
 Creative Commons Licence – Franz Matejka – HTL Braunau
 
 ## Host Discovery
