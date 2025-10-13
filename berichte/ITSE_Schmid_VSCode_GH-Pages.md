@@ -2,6 +2,21 @@
 | ------------- | ------ | ------------ | ----------- | ---------- | ------------- |
 | Cedric Schmid | 4AHITS | ITSE-Übungen | Git, VSCode | 06.10.2025 | Franz Matejka |
 
+## Aufgabenstellung
+
+Arbeitsvorbereitung:
+
+Installiere Kali und Metasploitable (falls noch nicht geschehen)
+Stelle beide VMs auf Bridged ins Labor-Netz
+
+Installiere Visual Studio Code auf Kali Linux
+
+Klone das Github Projekt in Kali, nimm mit VS Code eine Änderung im Markdown vor, führe add, commit und push durch und prüfe ob die Änderungen in der generierten html Seite ankommen (kurze Wartezeit)
+
+Nimm nun über die GitHub Oberfläche eine Änderung vor und prüfe ob diese per git pull in den Klon auf Kali übernommen werden.
+
+Dokumentiere alles wesentliche in einem Arbeitsbericht.
+
 ## Git-Setup
 
 ```bash
