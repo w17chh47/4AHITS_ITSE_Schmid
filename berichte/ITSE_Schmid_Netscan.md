@@ -60,3 +60,17 @@ for ((i = 1; i <= 254; i++)); do
   fi
 done
 ```
+
+### Übung (host discovery)
+
+ping scan: `nmap -sn 192.168.0.0/24`
+
+```bash
+$ nmap -sn 10.51.181.223/24
+Starting Nmap 7.92 ( https://nmap.org ) at 2025-10-13 12:36 CEST
+Nmap scan report for 10.51.181.76
+Host is up (0.0056s latency).
+Nmap scan report for 10.51.181.223
+Host is up (0.00038s latency).
+Nmap done: 256 IP addresses (2 hosts up) scanned in 6.97 seconds
+```
