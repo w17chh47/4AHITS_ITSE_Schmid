@@ -60,6 +60,14 @@ Hinweise:
 - Mit der Option -sn führt nmap nur den ping scan durch (ansonsten wird automtisch auch die nächste, länger dauernde, Phase des scans ausgeführt – siehe folgende Übung)
 Creative Commons Licence – Franz Matejka – HTL Braunau
 
+**Übung (Alternativen)**
+
+Recherchiere zu Alternativen für das Host Discovery. D.h. für den Fall, dass kein ping oder nmap zur Verfügung steht.
+
+**Übung (Firewall)**
+
+Recherchiere welche Verteidigungsmöglichkeiten es gegen einen Ping Scan gibt wenn dieser mit dem ping Tool ausgeführt werden sollte. Wie könnte ein Angreifer dies wiederum umgehen.
+
 ## Host Discovery
 
 ### Übung (ping)
@@ -111,12 +119,8 @@ Ping a host with specific number of pings, per-packet response timeout (`-W`), a
 
 ```bash
 #!/bin/bash
-
-for ((i = 1; i <= 254; i++)); do
-  if ping -c 1 192.168.2.$i > /dev/null 2>&1; then
-    echo "192.168.2.$i ist online"
-  fi
-done
+NET=192.168.75.
+seq 1 254|xargs -P0 -I_ sh -c "ping -c1 ${NET}_&>/dev/null&&echo found: ${NET}_"
 ```
 
 ### Übung (host discovery)
@@ -132,3 +136,15 @@ Nmap scan report for 10.51.181.223
 Host is up (0.00038s latency).
 Nmap done: 256 IP addresses (2 hosts up) scanned in 6.97 seconds
 ```
+
+### Übung (Alternativen)
+
+ARP-Scanning ist eine Alternative (z.B. mit `arp-scan`). Ansonsten gibt es auch:
+
+- `netdiscover`
+- `masscan`
+- `fping`
+
+### Übung (Firewall)
+
+ICMP-Echo-Requests blockieren mit einer Firewall, allerdings könnte ein Angreifer auf andere Protokolle ausweichen
