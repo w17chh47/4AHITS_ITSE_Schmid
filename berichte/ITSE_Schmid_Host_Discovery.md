@@ -127,7 +127,7 @@ seq 1 254|xargs -P0 -I_ sh -c "ping -c1 ${NET}_&>/dev/null&&echo found: ${NET}_"
 
 ping scan: `nmap -sn 192.168.0.0/24`
 
-```bash
+```
 $ nmap -sn 10.51.181.223/24
 Starting Nmap 7.92 ( https://nmap.org ) at 2025-10-13 12:36 CEST
 Nmap scan report for 10.51.181.76
