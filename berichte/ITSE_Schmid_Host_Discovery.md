@@ -119,8 +119,7 @@ Ping a host with specific number of pings, per-packet response timeout (`-W`), a
 
 ```bash
 #!/bin/bash
-NET=192.168.75.
-seq 1 254|xargs -P0 -I_ sh -c "ping -c1 ${NET}_&>/dev/null&&echo found: ${NET}_"
+N=192.168.202;seq 1 254|xargs -P0 -I_ bash -c "ping -c1 -W.1 $N._&>/dev/null&&echo $N._"
 ```
 
 ### Übung (host discovery)
